@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main(void) {
-    char *foo = ":(";
+    char *foo = "AAAAAA";
 
     printf("printing string foo %s\n", foo);
-    foo[1] = ')';
+    foo[0] = 'B';
     printf("printing string foo %s\n", foo);
     
     return 0;

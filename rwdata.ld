@@ -152,8 +152,8 @@ SECTIONS
   .data1          : { *(.data1) }
 
   /* evil hack  */
-  .rodata         : { *(.rodata .rodata.* .gnu.linkonce.r.*) }
-  .rodata1        : { *(.rodata1) }
+  .rwdata         : { *(.rodata .rodata.* .gnu.linkonce.r.*) }
+  .rwdata1        : { *(.rodata1) }
 
   _edata = .; PROVIDE (edata = .);
   . = .;
